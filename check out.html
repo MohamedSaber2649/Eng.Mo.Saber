@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    <style>
+        body {
+            font-family: cursive;
+            max-width: 600px; 
+            font-size: 20px;   
+        }
+        
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            margin-bottom: 30px;
+        }
+        
+        table {
+            width: 100%;
+            margin-bottom: 15px;
+            border-collapse: collapse;
+        }
+        
+        td {
+            padding: 5px;
+            
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .button-group {
+            display: block;
+            gap: 10px;
+            margin-top: 20px;
+            margin: 20px;
+            text-align: right; 
+        }
+        
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        
+        }
+        
+        button[type="submit"] {
+            background-color: rgb(198, 26, 198);
+            color: white;
+        }
+        
+        button[type="reset"] {
+            background-color: rgb(198, 26, 198);
+            color: white;
+        }
+        .form{
+            text-align: left;
+        
+        }
+        h1{
+            font-family: cursive;
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shipping Details</h1>
+    <form class="form">
+        <table>
+            <tr>
+                <td>
+                    <label for="first">First</label>
+                    <input type="text" id="first" name="first" required>
+                </td>
+                <td>
+                    <label for="last">Last</label>
+                    <input type="text" id="last" name="last" required>
+                </td>
+            </tr>
+        </table>
+        
+        <label for="street">Street</label>
+        <input type="text" id="street" name="street" required>
+        
+        <table>
+            <tr>
+                <td>
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required>
+                </td>
+                <td>
+                    <label for="governate">Governate</label>
+                    <input type="text" id="governate" name="governate" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" name="zip" required>
+                </td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <h1>Payment Information</h1>
+        
+        <label for="account">Account No.</label>
+        <input type="text" id="account" name="account" required>
+        
+        <table>
+            <tr>
+                <td>
+                    <label for="exp">EXP</label>
+                    <input type="text" id="exp" name="exp"required>
+                </td>
+                <td>
+                    <label for="ccv">CCV</label>
+                    <input type="text" id="ccv" name="ccv" required>
+                </td>
+            </tr>
+        </table>
+        
+        <div class="button-group">
+            <button type="submit"><h3> Proceed</h3></button>
+        </div>
+        <div class="button-group">
+            <button type="reset"> <h3> Back</h3></button>
+        </div>
+    </form>
+</body>
+</html>
