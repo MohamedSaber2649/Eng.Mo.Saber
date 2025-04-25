@@ -1,45 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>sheet 8</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-
-<body>
-    <center>
-        <table class="control" width="80%">
-            <tr>
-                <td colspan="1" class="td1"><img src="3lom.jpg" width="100px" height="100px"></td>
-                <td colspan="4" class="td2">
-                    <h1>Sheet 8</h1>
-                </td>
-                <td colspan="1" class="td3"><img src="ainshams.jpg" width="100px" height="100px"></td>
-            </tr>
-            <tr>
-
-                <td colspan="6" class="tdm">
-                    <div class="pes">
-                        <a href="home.html" target="pes">Home</a>
-                        <a href="#">About</a>
-                        <div class="dropdown">
-                            <details>
-                                <Summary>Brand</Summary>
-                                <a href="iphone.html" target="pes">Iphone</a>
-                                <a href="#" target="pes">Samsung</a>
-                            </details>
-                        </div>
-                        <a href="#" >Contect</a>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="6"> <iframe name="pes" src="" width="100%" height="1250px" scorolling="no"></iframe>
-                </td>
-            </tr>
-        </table>
-    </center>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Legends - Ronaldo vs Messi</title>
+    <link rel="stylesheet" href="styles.css">
 </body>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ronaldo.html">Ronaldo</a></li>
+                <li><a href="messi.html">Messi</a></li>
+                <li class="login-btn"><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section class="hero">
+            <h1>The Greatest Football Rivalry</h1>
+            <div class="players-comparison">
+                <div class="player" id="ronaldo">
+                    <img src="https://th.bing.com/th/id/OIP.2OTo1icaNIE7rGq4mRYiSgHaE8?w=258&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Cristiano Ronaldo" class="rotate">
+                    <h2>Cristiano Ronaldo</h2>
+                </div>
+                <div class="vs"><span>VS</span></div>
+                <div class="player" id="messi">
+                    <img src="https://www.sportco.io/images/post/Ac_1574011066.jpeg" alt="Lionel Messi" class="rotate">
+                    <h2>Lionel Messi</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <h2>Career Comparison</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Goals</h3>
+                    <p>Ronaldo: 850+</p>
+                    <p>Messi: 800+</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Titles</h3>
+                    <p>Ronaldo: 34</p>
+                    <p>Messi: 42</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Ballon d'Or</h3>
+                    <p>Ronaldo: 5</p>
+                    <p>Messi: 8</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="login-modal" class="login-modal"> 
+        <div class="login-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Football Legends Comparison</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
